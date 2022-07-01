@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Box, Button, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import HomeIcon from '@mui/icons-material/Home';
 import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
 import { Cog as CogIcon } from '../icons/cog';
 import { Lock as LockIcon } from '../icons/lock';
@@ -17,6 +18,11 @@ import { Logo } from './logo';
 import { NavItem } from './nav-item';
 
 const items = [
+  {
+    href: '/overview',
+    icon: (<HomeIcon fontSize="small" />),
+    title: 'Overview'
+  },
   {
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
