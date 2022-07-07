@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { DashboardLayout } from "src/components/dashboard-layout";
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Grid, Paper } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 const Overview = () => {
   return (
@@ -32,11 +33,30 @@ const Overview = () => {
         opacity: [0.9, 0.8, 0.7],
         },
         }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
       >
-        <Typography
-        align = 'center'>
-          Center
-        </Typography>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk6pXv4O705aOAcZTyE-pJIks-3YOBZLKwYQ"
+          alt="image"
+        />
+        Center
+      </Box>
+      <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        '& > :not(style)': {
+          m: 1,
+          width: 128,
+          height: 128,
+        },
+      }}
+      >
+        <Paper elevation={0} />
+        <Paper />
+        <Paper elevation={3} />
       </Box>
     </Grid>
   </>
