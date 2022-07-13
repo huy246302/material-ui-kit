@@ -1,0 +1,13 @@
+.MuiGrid-item {
+  box-sizing: border-box;
+  margin: 0px;
+  flex-direction: row;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.MuiGrid-left {
+  padding-left: 32px;
+}
